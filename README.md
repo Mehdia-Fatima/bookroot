@@ -7,6 +7,18 @@ The project focuses on **building robust ML/NLP models** and integrating them in
 
 ---
 
+## 🌿 The Core Concept: The World-Tree
+In this ecosystem, progress is organic. Every book started, journal entry written, or habit completed acts as nutrients for your **Personal Tree**. 
+
+
+
+* **Sprout:** Begin a new book or habit.
+* **Leaves:** Maintain a reading or journaling streak.
+* **Blossom:** Complete a book or reach a significant milestone.
+* **Arbor:** Reflect on a forest of past achievements and intellectual growth.
+
+---
+
 ## 🎯 Project Goals
 
 - Build real-world **machine learning models** on book and review data  
@@ -43,6 +55,22 @@ The project focuses on **building robust ML/NLP models** and integrating them in
 ### 📈 Predictive Modeling
 - Book popularity prediction using regression models  
 - Explainable ML (feature importance)  
+
+---
+
+## 🚀 Working Prototype (Streamlit)
+A functional web-based prototype has been developed to serve as a "Logic Testing Ground." This allows for rapid iteration of growth algorithms and API data parsing before final mobile deployment.
+
+* **Live Discovery:** Real-time search using the **Open Library API**.
+* **XP Engine:** Logic that converts reading progress into "Biological Nutrients" (XP).
+* **NLP Sandbox:** Testing sentiment analysis on journal entries to determine "weather" effects (Sun/Rain) for the tree.
+
+**To run the prototype:**
+```bash
+cd prototypes/streamlit_app
+pip install -r requirements.txt
+streamlit run app.py
+```
 
 ---
 
@@ -101,6 +129,10 @@ The Android app will:
     - recommender_model.pkl
   - **backend/**
     - api/ *(ML model serving – planned)*
+  - **prototypes/**
+    - streamlit_app/
+      - app.py
+      - requirements.txt
   - **android/**
     - BookRootApp/ *(Kotlin Android app)*
   - requirements.txt
@@ -114,8 +146,9 @@ The Android app will:
 - [ ] Data collection & cleaning  
 - [ ] NLP model development  
 - [ ] Recommendation system  
-- [ ] Backend API setup  
-- [ ] Android app MVP  
+- [ ] Backend API setup
+- [ ] Web Prototype: Streamlit MVP functional for logic validation.
+- [ ] Android app MVP: Porting UI to Kotlin/Jetpack Compose.
 - [ ] Play Store deployment  
 
 ---
