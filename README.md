@@ -5,6 +5,8 @@ BookRoot is a **machine learning–driven Android application** that uses book m
 
 The project focuses on **building robust ML/NLP models** and integrating them into a **native Android app built with Kotlin**, with the goal of publishing on the **Google Play Store**.
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://bookroot-prototype.streamlit.app/)
+
 ---
 
 ## 🌿 The Core Concept: The World-Tree
