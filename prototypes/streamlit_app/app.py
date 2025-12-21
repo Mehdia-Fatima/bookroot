@@ -14,7 +14,7 @@ if root_dir not in sys.path:
 
 try:
     # Adjusted import to match your nested directory: backend -> api -> client
-    from backend.api.open_library_client import OpenLibraryClient
+    from backend.api.openlibrary_client import OpenLibraryClient
     client = OpenLibraryClient()
 except ImportError as e:
     st.error(f"Import Error: {e}")
