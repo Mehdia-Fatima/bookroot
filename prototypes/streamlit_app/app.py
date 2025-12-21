@@ -22,9 +22,9 @@ except ImportError as e:
     st.stop()
 
 # --- STREAMLIT UI ---
-st.set_page_config(page_title="HabitRoot Prototype", page_icon="🌿", layout="wide")
+st.set_page_config(page_title="BookRoot Prototype", page_icon="🌿", layout="wide")
 
-# Sidebar for Habit Progress
+# Sidebar for Book Progress
 with st.sidebar:
     st.title("🌳 Your Growth")
     xp = st.slider("Tree XP", 0, 1000, 120)
@@ -36,7 +36,7 @@ with st.sidebar:
     st.write(f"Stage: {stages.get(level, '🌳 Mature Tree')}")
 
 st.title("📚 BookRoot Discovery")
-st.write("Find books to 'water' your habit tree.")
+st.write("Find books to 'water' your Book tree.")
 
 query = st.text_input("Search for a book (Title, Author, or Subject):")
 
