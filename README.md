@@ -1,11 +1,10 @@
 # 📚 BookRoot 🌱  
-**An intelligent Android lifestyle app for book insights, recommendations, and reader profiling**
+**An intelligent Android lifestyle app for book insights, recommendations, and reader profiling** <br><br>
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://bookroot-prototype.streamlit.app/)
 
 BookRoot is a **machine learning–driven Android application** that uses book metadata and reader reviews to deliver **personalized recommendations, intelligent summaries, and reader behavior insights**.
 
 The project focuses on **building robust ML/NLP models** and integrating them into a **native Android app built with Kotlin**, with the goal of publishing on the **Google Play Store**.
-
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://bookroot-prototype.streamlit.app/)
 
 ---
 
