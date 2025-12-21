@@ -42,7 +42,7 @@ query = st.text_input("Search for a book (Title, Author, or Subject):")
 
 if query:
     with st.spinner("Searching..."):
-        df = client.search(query=query, limit=30)
+        df = client.search(query=query, limit=60)
     
     if not df.empty:
         for _, row in df.iterrows():
