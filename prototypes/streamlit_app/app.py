@@ -35,14 +35,14 @@ with st.sidebar:
     stages = {1: "🌱 Seedling", 2: "🌿 Sprout", 3: "🌳 Sapling"}
     st.write(f"Stage: {stages.get(level, '🌳 Mature Tree')}")
 
-st.title("📚 HabitRoot Discovery")
+st.title("📚 BookRoot Discovery")
 st.write("Find books to 'water' your habit tree.")
 
 query = st.text_input("Search for a book (Title, Author, or Subject):")
 
 if query:
     with st.spinner("Searching..."):
-        df = client.search(query=query, limit=5)
+        df = client.search(query=query, limit=30)
     
     if not df.empty:
         for _, row in df.iterrows():
