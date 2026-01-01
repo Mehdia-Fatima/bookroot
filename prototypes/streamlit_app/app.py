@@ -14,7 +14,7 @@ if root_dir not in sys.path:
 
 try:
     # Adjusted import to match your nested directory: backend -> api -> client
-    from backend.api.openlibrary_client import OpenLibraryClient
+    from backend.api.open_library_client import OpenLibraryClient
     client = OpenLibraryClient()
 except ImportError as e:
     st.error(f"Import Error: {e}")
@@ -22,9 +22,9 @@ except ImportError as e:
     st.stop()
 
 # --- STREAMLIT UI ---
-st.set_page_config(page_title="BookRoot Prototype", page_icon="🌿", layout="wide")
+st.set_page_config(page_title="HabitRoot Prototype", page_icon="🌿", layout="wide")
 
-# Sidebar for Book Progress
+# Sidebar for Habit Progress
 with st.sidebar:
     st.title("🌳 Your Growth")
     xp = st.slider("Tree XP", 0, 1000, 120)
@@ -35,14 +35,14 @@ with st.sidebar:
     stages = {1: "🌱 Seedling", 2: "🌿 Sprout", 3: "🌳 Sapling"}
     st.write(f"Stage: {stages.get(level, '🌳 Mature Tree')}")
 
-st.title("📚 BookRoot Discovery")
-st.write("Find books to 'water' your Book tree.")
+st.title("📚 HabitRoot Discovery")
+st.write("Find books to 'water' your habit tree.")
 
 query = st.text_input("Search for a book (Title, Author, or Subject):")
 
 if query:
     with st.spinner("Searching..."):
-        df = client.search(query=query, limit=60)
+        df = client.search(query=query, limit=5)
     
     if not df.empty:
         for _, row in df.iterrows():
