@@ -9,7 +9,7 @@ The project focuses on **building robust ML/NLP models** and integrating them in
 ---
 
 ## 🌿 The Core Concept: The World-Tree
-In this ecosystem, progress is organic. Every book started, journal entry written, or habit completed acts as nutrients for your **Personal Tree**. 
+In this ecosystem, progress is organic. Every book/movie started, journal entry written, or habit completed acts as nutrients for your **Personal Tree**. 
 
 
 
