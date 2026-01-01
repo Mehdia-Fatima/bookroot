@@ -1,1 +1,18 @@
 .env
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Streamlit/IDE settings
+.streamlit/config.toml
+.vscode/
+.idea/
+
+# Windows/Mac system files
+Thumbs.db
+.DS_Store
+
